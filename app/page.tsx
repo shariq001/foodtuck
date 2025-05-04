@@ -5,7 +5,8 @@ import Link from 'next/link'
 import React from 'react'
 import { Great_Vibes } from 'next/font/google';
 import Image from 'next/image'
-import {  faCheck, faStar } from '@fortawesome/free-solid-svg-icons'
+import {  faCheck, faPlay, faShareNodes, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faCommentDots, faThumbsUp  } from '@fortawesome/free-regular-svg-icons'
 
 const greatVibes = Great_Vibes({
   subsets: ['latin'],
@@ -350,6 +351,86 @@ const Home = () => {
 
           <h3 className='text-[24px] font-bold helvetica'>Alamin Hasan</h3>
           <p className='helvetica text-[#828282]'>Food Specialist</p>
+        </div>
+      </div>
+
+      {/* Section 9 */}
+      <div className="sm1:px-[16px] sm2:px-[20px] md1:px-[25px] md2:px-[30px] lg1:px-[50px] lg2:px-[75px] xl:px-[100px] py-[50px] flex flex-col justify-center items-end bg-[url('/Home-Images/home-15.png')] bg-cover bg-center my-[50px]">
+        <h1 className={`${greatVibes.className} text-[#FF9F0D] text-[32px]`}>Restaurant Active Process</h1>
+        <h1 className='text-[48px] leading-[56px] font-bold helvetica w-[705px] text-right'><span className='text-[#FF9F0D]'>We</span> Document Every Food Bean Process until it is saved</h1>
+
+        <p className='leading-[24px] w-[651px] text-right my-[15px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna,</p>
+
+        <div className='flex justify-end items-center gap-[20px]'>
+          <Link href='' className='border-[1px] border-[#FF9F0D] rounded-[25px] px-[32px] py-[10px]  btn-fill '>Read More</Link>
+
+          <Link href='' className='border-[1px] border-[#FF9F0D] rounded-[25px] px-[32px] py-[10px] font-bold btn-fill inline-flex'><FontAwesomeIcon icon={faPlay} className='size-[25px] inline-flex mr-[10px]' /> Play Video</Link>
+        </div>
+      </div>
+
+      {/* Section 10 */}
+      <div className='sm1:px-[16px] sm2:px-[20px] md1:px-[25px] md2:px-[30px] lg1:px-[50px] lg2:px-[75px] xl:px-[100px] py-[50px] flex flex-col justify-center items-center gap-[15px]'>
+        <h1 className={`${greatVibes.className} text-[#FF9F0D] text-[32px]`}>Blog Post</h1>
+        <h1 className='text-[48px] leading-[56px] font-bold helvetica text-right'><span className='text-[#FF9F0D]'>La</span>test News & Blog</h1>
+
+        <div className='flex justify-between items-center w-full'>
+
+          {/* 1 */}
+          <div className='w-[424px] flex flex-col'>
+            <Image src='/Home-Images/home-blog-1.png' width={423} height={349} alt='Blog Image' />
+
+            <div className='flex flex-col gap-[10px] p-[15px] border-white border-[1px] border-t-0'>
+              <p className='text-[#ff9f0d]'>10 February 2022</p>
+              <p className='text-[24px] helvetica font-bold leading-[32px]'>Pellentesque Non Efficitur Mi Aliquam Convallis Mi Quis</p>
+
+              <div className='flex justify-between w-full items-center'>
+                <p>Learn More</p>
+                <div className='flex justify-end items-center gap-[8px]'>
+                  <FontAwesomeIcon icon={faThumbsUp} className='size-[20px]'/>
+                  <FontAwesomeIcon icon={faCommentDots} className='size-[20px] text-[#ff9f0d]'/>
+                  <FontAwesomeIcon icon={faShareNodes} className='size-[20px]'/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 2 */}
+          <div className='w-[424px] flex flex-col'>
+            <Image src='/Home-Images/home-blog-2.png' width={423} height={349} alt='Blog Image' />
+
+            <div className='flex flex-col gap-[10px] p-[15px] border-white border-[1px] border-t-0'>
+              <p className='text-[#ff9f0d]'>10 February 2022</p>
+              <p className='text-[24px] helvetica font-bold leading-[32px]'>Pellentesque Non Efficitur Mi Aliquam Convallis Mi Quis</p>
+
+              <div className='flex justify-between w-full items-center'>
+                <p>Learn More</p>
+                <div className='flex justify-end items-center gap-[8px]'>
+                  <FontAwesomeIcon icon={faThumbsUp} className='size-[20px]'/>
+                  <FontAwesomeIcon icon={faCommentDots} className='size-[20px] text-[#ff9f0d]'/>
+                  <FontAwesomeIcon icon={faShareNodes} className='size-[20px]'/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 3 */}
+          <div className='w-[424px] flex flex-col'>
+            <Image src='/Home-Images/home-blog-3.png' width={423} height={349} alt='Blog Image' />
+
+            <div className='flex flex-col gap-[10px] p-[15px] border-white border-[1px] border-t-0'>
+              <p className='text-[#ff9f0d]'>10 February 2022</p>
+              <p className='text-[24px] helvetica font-bold leading-[32px]'>Curabitur rutrum velit ac congue malesuada</p>
+
+              <div className='flex justify-between w-full items-center'>
+                <p>Learn More</p>
+                <div className='flex justify-end items-center gap-[8px]'>
+                  <FontAwesomeIcon icon={faThumbsUp} className='size-[20px]'/>
+                  <FontAwesomeIcon icon={faCommentDots} className='size-[20px] text-[#ff9f0d]'/>
+                  <FontAwesomeIcon icon={faShareNodes} className='size-[20px]'/>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
